@@ -9,8 +9,9 @@ public class ClothesButton : MonoBehaviour
     private bool Equip;
     [SerializeField] private Sprite ClothesSprite;
     [SerializeField] private Sprite ClothesEquipSprite;
-    [SerializeField] private GameObject Naked;
-    [SerializeField] private GameObject Clothes;
+    [SerializeField] private string ClothesType;
+    private GameObject NackedClothes;
+    private GameObject Clothes;
     void Start()
     {
         ButtonImage = GetComponent<Image>();
@@ -23,15 +24,19 @@ public class ClothesButton : MonoBehaviour
         {
             ButtonImage.sprite = ClothesSprite;
             Equip = false;
-            Naked.SetActive(true);
+            Clothes = GameObject.Find(ClothesType);
             Clothes.SetActive(false);
+            /*NackedClothes = GameObject.Find("Nacked"+ClothesType);
+            NackedClothes.SetActive(true);*/
         }
         else
         {
             ButtonImage.sprite = ClothesEquipSprite;
             Equip = true;
-            Naked.SetActive(false);
+            Clothes = GameObject.Find(ClothesType);
             Clothes.SetActive(true);
+            /*NackedClothes = GameObject.Find("Nacked" + ClothesType);
+            NackedClothes.SetActive(false);*/
         }
     }
 }
