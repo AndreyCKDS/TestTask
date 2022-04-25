@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviourPun
 {
     private Animator Anim;
     private Rigidbody Rig;
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         Anim = GetComponent<Animator>();
         Anim.SetBool("IsWalking", false);
         Rig = GetComponent<Rigidbody>();
+        Physics.IgnoreLayerCollision(3, 3);
         PhotonView = GetComponent<PhotonView>();
     }
 

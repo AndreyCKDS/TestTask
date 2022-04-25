@@ -2,41 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class ClothesButton : MonoBehaviour
+public class ClothesButton : MonoBehaviourPun
 {
     private Image ButtonImage;
     private bool Equip;
     [SerializeField] private Sprite ClothesSprite;
     [SerializeField] private Sprite ClothesEquipSprite;
     [SerializeField] private string ClothesType;
-    private GameObject NackedClothes;
-    private GameObject Clothes;
+    private PhotonView PhotonView;
+    private GameObject Player;
     void Start()
     {
+        PhotonView = GetComponent<PhotonView>();
         ButtonImage = GetComponent<Image>();
         Equip = true;
     }
 
-    public void EquipClothes()
+    public void FindPlayer()
     {
         if (Equip)
         {
             ButtonImage.sprite = ClothesSprite;
             Equip = false;
-            Clothes = GameObject.Find(ClothesType);
-            Clothes.SetActive(false);
-            /*NackedClothes = GameObject.Find("Nacked"+ClothesType);
-            NackedClothes.SetActive(true);*/
+            Player = GameObject.FindWithTag("Player");
+            PhotonView.RPC("EquipClothes", RpcTarget.All, ClothesType);
         }
         else
         {
             ButtonImage.sprite = ClothesEquipSprite;
             Equip = true;
-            Clothes = GameObject.Find(ClothesType);
+            Player = GameObject.FindWithTag("Player");
+            PhotonView.RPC("EquipClothes", RpcTarget.All, ClothesType);
+        }
+    }
+
+    [PunRPC]
+    void EquipClothes(string ClothesType)
+    {
+        if (Equip)
+        {
+            GameObject Clothes = Player.transform.Find(ClothesType).gameObject;
             Clothes.SetActive(true);
-            /*NackedClothes = GameObject.Find("Nacked" + ClothesType);
-            NackedClothes.SetActive(false);*/
+            GameObject NackedClothes = Player.transform.Find("Nacked" + ClothesType).gameObject;
+            NackedClothes.SetActive(false);
+        }
+        else
+        {
+            GameObject Clothes = Player.transform.Find(ClothesType).gameObject;
+            Clothes.SetActive(false);
+            GameObject NackedClothes = Player.transform.Find("Nacked" + ClothesType).gameObject;
+            NackedClothes.SetActive(true);
         }
     }
 }

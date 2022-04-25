@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534873729701105203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535088696877924577}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535248095468048587}
   - component: {fileID: 5560221934185731043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hair_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534873777613767613}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535474282210548273}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535209344881506065}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534840198195250031}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534725358418868581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534526838834147959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535466706585462777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535363225491549959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535281941076634655}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535345927096628627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534617547043821439}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,8 +504,9 @@ GameObject:
   - component: {fileID: 5531123159042974723}
   - component: {fileID: 5531123159042974724}
   - component: {fileID: 81902337620562289}
-  - component: {fileID: 3309190825666214143}
-  m_Layer: 0
+  - component: {fileID: 317073785780214403}
+  - component: {fileID: -3205751716652733347}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -618,11 +619,12 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 3309190825666214143}
+  - {fileID: 317073785780214403}
+  - {fileID: -3205751716652733347}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &3309190825666214143
+--- !u!114 &317073785780214403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -631,30 +633,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 5531123159042974727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 1
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: IsWalking
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
+--- !u!114 &-3205751716652733347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531123159042974727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 0
 --- !u!1 &5531546649200848027
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534651066793790037}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535203214490315513}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534799832246640405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534370253284301633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +796,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534834986651755453}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535108758932352867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -851,7 +857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534420976298327673}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +887,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535007526926119265}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534588344961275165}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535201946431089833}
   - component: {fileID: 5559823980622136257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: nacked_arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534594244418980985}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535430153645228085}
   - component: {fileID: 5560788997215721975}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NackedPants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534820568907425589}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1216,7 +1222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535196638461890751}
   - component: {fileID: 5559878940870377387}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: nacked_hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534600730279848827}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1331,7 +1337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535067134017139981}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534547379507621251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5534655331335270175}
   - component: {fileID: 5559819391617381769}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1491,7 +1497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535137677827749269}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1523,7 +1529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5534584102523722973}
   - component: {fileID: 5559283172058876121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534559976441876785}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1639,7 +1645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534994415892825531}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1674,7 +1680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534557783799878201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1704,7 +1710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534527851938347731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535422721471173649}
   - component: {fileID: 5560207523680529991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NackedBoots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1824,7 +1830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535171015641058205}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534784378340468117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_eyes_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535122728810499593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1916,7 +1922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534719355482719035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1947,7 +1953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535125079924245255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1978,7 +1984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535258855867183383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2009,7 +2015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534368757657756251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2040,7 +2046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534415705819682039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2070,7 +2076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535352628184301539}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2101,7 +2107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534491519611062909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2132,7 +2138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535385634650919945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535341371125654401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534411274413656479}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2225,7 +2231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534805231763367095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2256,7 +2262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535197285229025169}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535010260815255875}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2317,7 +2323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534420947711814929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2348,7 +2354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535282850251910391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534729236346634887}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2410,7 +2416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535002237073209017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,7 +2447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535337454351698339}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,7 +2478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5534846730938498003}
   - component: {fileID: 5559926859524342423}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Boots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2560,7 +2566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534799452164615731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2591,7 +2597,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535204293920361209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2623,7 +2629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535040431906066483}
   - component: {fileID: 5559752506518390347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NackedShirt
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
@@ -2719,7 +2725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535001066446117745}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2749,7 +2755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535139729722427101}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2780,7 +2786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534505057924145171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2811,7 +2817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534686507235008089}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2841,7 +2847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534679513775683341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2872,7 +2878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534527823286434113}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2905,7 +2911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535224558127238517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2936,7 +2942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534486743054036671}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +2973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535484610928305753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2998,7 +3004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534740533142351151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3028,7 +3034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534407693033557783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3059,7 +3065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5535343437926584341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: girlBone_LeftHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3090,7 +3096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535390141209631425}
   - component: {fileID: 5559897737060010177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
