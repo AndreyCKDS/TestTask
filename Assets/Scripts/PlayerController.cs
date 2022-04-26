@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PlayerController : MonoBehaviourPun
+public class PlayerController : MonoBehaviourPunCallbacks
 {
     private Animator Anim;
     private Rigidbody Rig;
@@ -37,5 +37,24 @@ public class PlayerController : MonoBehaviourPun
                 Anim.SetBool("IsWalking", false);
         }
         
+    }
+
+    [PunRPC]
+    public void EquipClothes(string ClothesType, bool Equip)
+    {
+        if (Equip)
+        {
+            GameObject Clothes = transform.Find(ClothesType).gameObject;
+            Clothes.SetActive(true);
+            GameObject NackedClothes = transform.Find("Nacked" + ClothesType).gameObject;
+            NackedClothes.SetActive(false);
+        }
+        else
+        {
+            GameObject Clothes = transform.Find(ClothesType).gameObject;
+            Clothes.SetActive(false);
+            GameObject NackedClothes = transform.Find("Nacked" + ClothesType).gameObject;
+            NackedClothes.SetActive(true);
+        }
     }
 }

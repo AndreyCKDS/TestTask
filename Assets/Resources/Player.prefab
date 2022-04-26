@@ -1100,6 +1100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535430153645228085}
   - component: {fileID: 5560788997215721975}
+  - component: {fileID: 7394041462687849935}
   m_Layer: 3
   m_Name: NackedPants
   m_TagString: Untagged
@@ -1181,6 +1182,28 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000014439225, y: -0.27714115, z: 0.0016239136}
     m_Extent: {x: 0.118330374, y: 0.34367365, z: 0.08572919}
   m_DirtyAABB: 0
+--- !u!114 &7394041462687849935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531737495506734395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5531761958856216375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5534655331335270175}
   - component: {fileID: 5559819391617381769}
+  - component: {fileID: 47995682578448263}
   m_Layer: 3
   m_Name: Shirt
   m_TagString: Untagged
@@ -1488,6 +1512,28 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0000047832727, y: 0.121962905, z: 0.008013643}
     m_Extent: {x: 0.4232744, y: 0.20155299, z: 0.10613241}
   m_DirtyAABB: 0
+--- !u!114 &47995682578448263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531831523746344297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5531842027986317979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,6 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535422721471173649}
   - component: {fileID: 5560207523680529991}
+  - component: {fileID: 2670261142544291302}
   m_Layer: 3
   m_Name: NackedBoots
   m_TagString: Untagged
@@ -1821,6 +1868,28 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.064384684, y: 0.3235644, z: 0.018570874}
     m_Extent: {x: 0.10766496, y: 0.07488988, z: 0.099285915}
   m_DirtyAABB: 0
+--- !u!114 &2670261142544291302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531930259354174683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5531930943680657931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,6 +2547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5534846730938498003}
   - component: {fileID: 5559926859524342423}
+  - component: {fileID: 7758961684969145520}
   m_Layer: 3
   m_Name: Boots
   m_TagString: Untagged
@@ -2557,6 +2627,28 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.06422368, y: 0.32209525, z: 0.020818241}
     m_Extent: {x: 0.11175954, y: 0.07521219, z: 0.10161885}
   m_DirtyAABB: 0
+--- !u!114 &7758961684969145520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532432242049883759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5532442244404474419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,6 +2721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535040431906066483}
   - component: {fileID: 5559752506518390347}
+  - component: {fileID: 8391064061353721908}
   m_Layer: 3
   m_Name: NackedShirt
   m_TagString: EditorOnly
@@ -2716,6 +2809,28 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000004544854, y: 0.16365692, z: 0.02047034}
     m_Extent: {x: 0.4231152, y: 0.15985909, z: 0.08802132}
   m_DirtyAABB: 0
+--- !u!114 &8391064061353721908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532476725390830519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &5532503680402096941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,6 +3211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5535390141209631425}
   - component: {fileID: 5559897737060010177}
+  - component: {fileID: 7355360214111702374}
   m_Layer: 3
   m_Name: Pants
   m_TagString: Untagged
@@ -3177,3 +3293,25 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000054359436, y: -0.27712896, z: 0.0018572621}
     m_Extent: {x: 0.11663151, y: 0.34366152, z: 0.08549583}
   m_DirtyAABB: 0
+--- !u!114 &7355360214111702374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5532663549075619321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

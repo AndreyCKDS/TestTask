@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Spawn : MonoBehaviour
+public class Spawn : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject Player;
     void Start()
