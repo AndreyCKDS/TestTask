@@ -7,19 +7,18 @@ using Photon.Realtime;
 
 public class MenuManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private TMP_InputField CreateInput;
-    [SerializeField] private TMP_InputField JoinInput;
+    [SerializeField] private TMP_InputField Input;
     private RoomOptions RoomOptions;
     public void CreateRoom()
     {
         RoomOptions = new RoomOptions();
         RoomOptions.MaxPlayers = 2;
-        PhotonNetwork.CreateRoom(CreateInput.text, RoomOptions);
+        PhotonNetwork.CreateRoom(Input.text, RoomOptions);
     }
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom(JoinInput.text);
+        PhotonNetwork.JoinRoom(Input.text);
     }
     public override void OnJoinedRoom()
     {
