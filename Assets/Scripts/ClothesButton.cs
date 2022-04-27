@@ -11,10 +11,12 @@ public class ClothesButton : MonoBehaviourPunCallbacks
     [SerializeField] private Sprite ClothesSprite;
     [SerializeField] private Sprite ClothesEquipSprite;
     [SerializeField] private string ClothesType;
+    private AudioSource AudioSource;
     private GameObject Player;
     void Start()
     {
         ButtonImage = GetComponent<Image>();
+        AudioSource = GetComponent<AudioSource>();
         Equip = true;
     }
 
@@ -32,5 +34,10 @@ public class ClothesButton : MonoBehaviourPunCallbacks
         }
         Player = GameObject.FindWithTag("Player");
         Player.GetComponent<PhotonView>().RPC("EquipClothes", RpcTarget.All, ClothesType, Equip);
+    }
+
+    public void PlayClothesSound()
+    {
+        AudioSource.Play();
     }
 }
