@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Photon.Pun;
 
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private FixedJoystick Joystick;
     [SerializeField] private float Speed;
     private Vector3 Velocity;
+    private Quaternion InitialRotation;
+    [SerializeField] private TMP_Text NicknameText;
 
     void Start()
     {
@@ -20,6 +23,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
         Rig = GetComponent<Rigidbody>();
         Physics.IgnoreLayerCollision(3, 3);
         PhotonView = GetComponent<PhotonView>();
+
+        NicknameText.text = PhotonView.Owner.NickName;
+        InitialRotation = Camera.main.transform.rotation;
     }
 
     private void FixedUpdate()
@@ -35,8 +41,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             }
             else
                 Anim.SetBool("IsWalking", false);
+            PhotonView.RPC("NicknameRotation", RpcTarget.All);
         }
-        
     }
 
     [PunRPC]
@@ -56,5 +62,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
             GameObject NackedClothes = transform.Find("Nacked" + ClothesType).gameObject;
             NackedClothes.SetActive(true);
         }
+    }
+
+    [PunRPC]
+    public void NicknameRotation()
+    {
+        NicknameText.transform.rotation = InitialRotation;
     }
 }

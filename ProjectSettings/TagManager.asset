@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Joystick
+  - ChatPanel
+  - ChatInput
   layers:
   - Default
   - TransparentFX
