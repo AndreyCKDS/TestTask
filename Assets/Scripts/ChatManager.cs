@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 
-public class ChatManager : MonoBehaviour
+public class ChatManager : MonoBehaviourPunCallbacks
 {
     
     private PhotonView PhotonView;
@@ -25,7 +25,7 @@ public class ChatManager : MonoBehaviour
         Nickname = PhotonView.Owner.NickName;
         ChatInput = GameObject.FindWithTag("ChatInput").GetComponent<TMP_InputField>();
         ChatPanel = GameObject.FindWithTag("ChatPanel");
-        PhotonView.RPC("SendMessage", RpcTarget.All, Nickname + " has joined", ChatMessage.MessageType.Info);
+        SendMessage(Nickname + " has joined", ChatMessage.MessageType.Info);
     }
 
     void Update()
@@ -39,9 +39,8 @@ public class ChatManager : MonoBehaviour
                 ChatInput.ActivateInputField();
             }
         }
-            
     }
-
+    
     [PunRPC]
     public void SendMessage(string text, ChatMessage.MessageType Type)
     {
